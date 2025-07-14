@@ -41,20 +41,6 @@ This project demonstrates a complete **ETL (Extract, Transform, Load)** pipeline
 - **Jupyter Notebook**
 - **Kaggle Dataset** (Order History)
 
----
-
-## Transformation Steps
-
-| Step | Description |
-|------|-------------|
-|  1 | Loaded raw CSV into `raw_data` schema in MySQL using Python |
-|  2 | Read the data from MySQL into a Pandas DataFrame |
-|  3 | Cleaned column names (e.g., `Date Order was placed` → `order_date`) |
-|  4 | Formatted `customer_id` as `C000000####` using `str.zfill()` |
-|  5 | Normalized `customer_status` to proper case using `.str.title()` |
-|  6 | Prefixed `order_id` and `product_id` with `ORD` and `PRD` |
-|  7 | Calculated `total_profit` column |
-|  8 | Loaded final cleaned data into a new schema: `analytics_data` |
 
 ---
 
